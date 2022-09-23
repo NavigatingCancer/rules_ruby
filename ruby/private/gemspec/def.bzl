@@ -166,7 +166,6 @@ def gem(
     pkg_zip(
         name = _zip_name,
         srcs = srcs + [":" + _gemspec_name],
-        strip_prefix = "./",
     )
 
     native.alias(
